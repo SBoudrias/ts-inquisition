@@ -34,7 +34,7 @@ export async function runGlobAndModifyTsFiles(
   folder: string,
   breadcrumbDate = true
 ) {
-  const globPath = path.join(process.cwd(), `${folder}/*.{ts,tsx}`)
+  const globPath = path.join(process.cwd(), `${folder}/*.{ts,tsx,mts,mtsx}`)
   console.log('runGlobAndModifyTsFiles -> globPath', globPath)
   const files = await globby([globPath])
 
